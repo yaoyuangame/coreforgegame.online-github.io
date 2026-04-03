@@ -3,74 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acellabe Game - Crafting Joyful Moments</title>
+    <title>Validus Labs | Engineering Strength</title>
     <style>
+        :root {
+            --primary-bg: #0f172a;
+            --secondary-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.7;
-            background-color: #f9f9f9;
-            color: #333;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            background-color: #ffffff;
-            padding: 2em 3em;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 40px 20px;
         }
-        h1, h2 {
-            font-weight: 600;
-            color: #111;
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 10px;
-            margin-top: 1.5em;
+        header {
+            border-bottom: 1px solid var(--secondary-bg);
+            padding-bottom: 40px;
+            margin-bottom: 40px;
         }
         h1 {
-            font-size: 2.8em;
-            text-align: center;
-            border-bottom: none;
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin: 0;
+            letter-spacing: -1px;
+        }
+        .slogan {
+            font-style: italic;
+            color: var(--text-dim);
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+        .product-card {
+            background: var(--secondary-bg);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .product-card h3 {
             margin-top: 0;
-            color: #2a2a2a;
+            color: var(--accent-color);
         }
-        h1 .tagline {
-            font-size: 0.5em;
-            font-weight: 400;
-            color: #555;
-            display: block;
-            margin-top: 10px;
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 2.5em;
-            padding-bottom: 1.5em;
-            border-bottom: 2px solid #eaeaea;
-        }
-        nav a {
-            text-decoration: none;
-            color: #007bff;
-            margin: 0 15px;
-            font-weight: 500;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        p {
-            font-size: 1.1em;
-        }
-        ul {
-            list-style-type: circle;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 0.5em;
-            font-size: 1.1em;
+        .contact-info {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid var(--accent-color);
         }
         a {
-            color: #007bff;
+            color: var(--accent-color);
             text-decoration: none;
         }
         a:hover {
@@ -78,99 +74,61 @@
         }
         footer {
             text-align: center;
-            margin-top: 3em;
-            padding-top: 1.5em;
-            border-top: 2px solid #eaeaea;
-            color: #888;
-            font-size: 0.9em;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-top: 100px;
+            padding-bottom: 40px;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- 公司头部信息 -->
         <header>
-            <h1>
-                Acellabe Game
-                <span class="tagline">Crafting Joyful Moments, One Tap at a Time.</span>
-            </h1>
+            <h1>VALIDUS LABS</h1>
+            <p class="slogan">Engineering Strength, Delivering Innovation.</p>
         </header>
 
-        <!-- 导航栏 -->
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#games">Our Games</a>
-            <a href="#careers">Join Us</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Validus Labs (Validus Technologies Ltd) is a premier internet software company dedicated to building the backbone of the digital economy. The name "Validus" is derived from Latin, signifying "Strength" and "Reliability." We specialize in high-performance software systems and scalable cloud architectures.</p>
+        </section>
 
-        <main>
-            <!-- 关于我们 -->
-            <section id="about">
-                <h2>About Us</h2>
-                <p>
-                    Welcome to Acellabe Game, a creative studio with a singular focus: crafting delightful and accessible casual games for everyone. We believe that games should be a source of joy, a relaxing escape, and a wonderful way to brighten your day. Our mission is to build charming worlds and intuitive gameplay that feel instantly familiar and endlessly fun.
-                </p>
-                <p>
-                    As a small, passionate team, we pour our hearts into every detail, from the art style to the satisfying feel of a perfect move. We are dedicated to creating high-quality experiences that respect our players' time and bring a smile to their faces.
-                </p>
-            </section>
+        <section id="products">
+            <h2>Our Flagship Products</h2>
+            
+            <div class="product-card">
+                <h3>Validus Workspace</h3>
+                <p>A next-generation cloud productivity suite designed for modern distributed teams. Features real-time collaboration, encrypted cloud storage, and seamless project management.</p>
+            </div>
 
-            <!-- 我们的游戏 -->
-            <section id="games">
-                <h2>Our Games</h2>
-                <h3>Project Bloom (Working Title)</h3>
-                <p>
-                    <strong>Genre:</strong> Relaxing Puzzle & Decoration<br>
-                    <strong>Platform:</strong> Mobile (iOS & Android)<br>
-                    <strong>Status:</strong> In Development
-                </p>
-                <p>
-                    Our debut title invites you into a serene world waiting to be brought to life. In "Project Bloom," you'll solve vibrant color-match puzzles to earn stars, which you can then use to restore and decorate your own magical garden. It’s the perfect blend of satisfying challenge and creative expression, designed for moments of calm and delight. We can't wait to share more with you soon!
-                </p>
-            </section>
+            <div class="product-card">
+                <h3>Translatio AI</h3>
+                <p>Advanced neural-machine translation engine supporting over 100 languages. Designed for enterprise localization with deep contextual awareness and industry-specific accuracy.</p>
+            </div>
+        </section>
 
-            <!-- 招聘信息 -->
-            <section id="careers">
-                <h2>Join Us</h2>
-                <p>
-                    Are you passionate about creating beautiful and engaging casual games? We are looking for creative, self-motivated individuals to grow with us. As part of Acellabe Game, you will have a direct impact on our projects and help shape the identity of our studio.
-                </p>
-                <h3>We are always looking for talent in:</h3>
-                <ul>
-                    <li>Unity Development</li>
-                    <li>2D Art & Animation</li>
-                    <li>Game & Level Design</li>
-                </ul>
-                <p>
-                    If you believe your skills would be a great fit for our team, even if you don't see a specific opening, we encourage you to reach out.
-                </p>
-                <p>
-                    <strong>How to Apply:</strong> Please send your resume and portfolio to our contact email: <a href="mailto:garciasimonetina@gmail.com">garciasimonetina@gmail.com</a>
-                </p>
-            </section>
+        <section id="services">
+            <h2>Core Expertise</h2>
+            <ul>
+                <li>Custom Enterprise Software Development</li>
+                <li>Full-Stack Web & Mobile Applications</li>
+                <li>AI & Machine Learning Integration</li>
+                <li>Cloud Infrastructure & Security Operations</li>
+            </ul>
+        </section>
 
-            <!-- 联系方式 -->
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>
-                    We'd love to hear from you. Whether you're a player with feedback, a talented creator, or a potential business partner, your message is important to us.
-                </p>
-                <p>
-                    <strong>General Inquiries & Partnerships:</strong><br>
-                    For all questions, press inquiries, or collaboration opportunities, please contact us at:<br>
-                    <a href="mailto:garciasimonetina@gmail.com">garciasimonetina@gmail.com</a>
-                </p>
-            </section>
-        </main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:validustechnologiesltd@gmail.com">validustechnologiesltd@gmail.com</a></p>
+                <p><strong>Company:</strong> Validus Technologies Ltd</p>
+                <p><strong>Inquiries:</strong> Business Development & Partnerships</p>
+            </div>
+        </section>
 
-        <!-- 底部版权信息 -->
         <footer>
-            <p>&copy; 2026 Acellabe Game. All Rights Reserved.</p>
+            &copy; 2025 Validus Technologies Ltd. All Rights Reserved.
         </footer>
-
     </div>
-
 </body>
 </html>
